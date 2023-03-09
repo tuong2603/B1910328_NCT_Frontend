@@ -38,7 +38,7 @@
                     <i class="fas fa-address-card"></i>
                 </h4>
                 <ContactCard :contact="activeContact" />
-                 <!-- <router-link :to="{
+                 <router-link :to="{
                     name: 'contact.edit',
                     params: { id: activeContact._id }
                 }">
@@ -46,7 +46,7 @@
                         <i class="fas fa-edit"></i>
                         Hiệu chỉnh
                     </span>
-                </router-link>  -->
+                </router-link> 
             </div>
         </div>
     </div>
@@ -116,11 +116,11 @@ export default {
                 }
             }
         },
-        // goToAddContact() {
-        //     this.$router.push({
-        //         name: "contact.create",
-        //     })
-        // }
+        goToAddContact() {
+            this.$router.push({
+                name: "contact.create",
+            })
+        }
     },
     mounted() {
         this.refreshList()
