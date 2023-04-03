@@ -1,3 +1,4 @@
+
 <template>
     <div class="page row">
         <div class="col-md-10 mt-3">
@@ -15,16 +16,16 @@
                     <i class="fas fa-redo"></i>
                     Làm mới
                 </button>
-                <!-- <router-link :to="{
+                <router-link :to="{
                     name: 'contact.add',
                     params: {
                     },
-                }"> -->
+                }">
                     <button class="btn btn-sm btn-success" @click="goToAddContact">
                         <i class="fas fa-plus"></i>
                         Thêm mới
                     </button>
-                <!-- </router-link> -->
+                </router-link>
                 <button class="btn btn-sm btn-danger" @click="removeAllContacts">
                     <i class="fas fa-trash"></i>
                     Xóa tất cả
@@ -116,11 +117,11 @@ export default {
                 }
             }
         },
-        goToAddContact() {
-            this.$router.push({
-                name: "contact.create",
-            })
-        }
+        // goToAddContact() {
+        //     this.$router.push({
+        //         name: "contact.create",
+        //     })
+        // }
     },
     mounted() {
         this.refreshList()
